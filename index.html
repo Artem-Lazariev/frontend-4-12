@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Зворотний відлік</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f4f4f9;
+    }
+
+    .timer {
+      display: flex;
+      gap: 20px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #ffffff;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      min-width: 70px;
+    }
+
+    .value {
+      font-size: 36px;
+      font-weight: bold;
+      color: #333333;
+    }
+
+    .label {
+      font-size: 14px;
+      color: #777777;
+      text-transform: uppercase;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="timer" id="timer-1">
+    <div class="field">
+      <span class="value" data-value="days">11</span>
+      <span class="label">Days</span>
+    </div>
+
+    <div class="field">
+      <span class="value" data-value="hours">11</span>
+      <span class="label">Hours</span>
+    </div>
+
+    <div class="field">
+      <span class="value" data-value="mins">11</span>
+      <span class="label">Minutes</span>
+    </div>
+
+    <div class="field">
+      <span class="value" data-value="secs">11</span>
+      <span class="label">Seconds</span>
+    </div>
+  </div>
+
+  <script src="timer.js"></script>
+</body>
+</html>
